@@ -1,0 +1,17 @@
+server:
+  port: 7878
+spring:
+  application:
+    name: configserver
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+    config:
+      server:
+        git:
+          uri: https://github.com/jdq8576/configserver
+          username: jdq8576
+          password: a15516722432
+          default-label: main
+          basedir: /Users/jdq8576/IdeaProjects/SpringCloud/base
